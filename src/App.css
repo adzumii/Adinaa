@@ -1,0 +1,601 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  padding: 20px 0;
+}
+header .header__container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+header .header__container .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .header__container .logo .logo__name {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 50px;
+  color: #005FA3;
+}
+header .header__container .navbar__items {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+header .header__container .navbar__items .contacts {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header .header__container .navbar__items .contacts .contacts__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .header__container .navbar__items .navbar {
+  display: flex;
+  gap: 82px;
+}
+header .header__container .navbar__items .navbar .navbar__items {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.main {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../src/img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .main__container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.main .main__container .main__title {
+  margin-top: 170px;
+  width: 589px;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 50px;
+  color: #fff;
+}
+.main .main__container .main__button {
+  width: 270px;
+  height: 60px;
+  background: #005FA3;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.main .main__container .main__navigation {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .main__container .main__navigation .elipse {
+  display: flex;
+  gap: 40px;
+}
+.main .main__container .main__navigation .elipse div {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  opacity: 0.4;
+}
+.main .main__container .main__navigation .strelka {
+  display: flex;
+}
+.main .main__container .main__navigation .strelka div {
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  font-size: 30px;
+}
+
+.main__page {
+  background: #EBEBEB;
+}
+.main__page .main__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main__page .main__container .main__title1 {
+  padding-top: 140px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  color: #BDBDBD;
+}
+.main__page .main__container .main__title2 {
+  margin-top: 170px;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  font-family: "Merriweather", serif;
+  color: #333333;
+}
+.main__page .main__container .main__photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 140px;
+}
+.main__page .main__container .main__photos .photo {
+  margin-top: 70px;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../src/img/flat.png);
+}
+.main__page .main__container .main__photos .photo .flat__title {
+  padding: 260px 20px 0;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 30px;
+  width: 187px;
+  color: #FFFFFF;
+}
+
+
+
+.about {
+  width: 1200px;
+  margin: 0 auto;
+}
+.about .about__container {
+  margin: 160px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.about .about__container .text__container .aboutus {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  color: #BDBDBD;
+}
+.about .about__container .text__container .about__title {
+  width: 347px;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  color: #333333;
+  font-family: "Merriweather", serif;
+}
+.about .about__container .text__container .about__title span {
+  color: #005FA3;
+}
+.about .about__container .text__container .about__info {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  width: 445px;
+}
+.about .about__container .static__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  gap: 30px;
+}
+.about .about__container .static__container .static__block {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 255px;
+  width: 255px;
+  background: #EBEBEB;
+}
+.about .about__container .static__container .static__block:hover {
+  background: #005FA3;
+  color: #FFFFFF;
+}
+.about .about__container .static__container .static__block .block__num {
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 66px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.about .about__container .static__container .static__block .block__des {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  width: 130px;
+}
+.about .about__container .static__container .static__block .block__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #005FA3;
+}
+
+
+.work {
+  background: #EBEBEB;
+}
+.work .work__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.work .work__container .work__client {
+  padding-top: 100px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  color: #BDBDBD;
+}
+.work .work__container .work__title {
+  margin: 40px 0;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  font-family: "Merriweather", serif;
+  color: #333333;
+}
+.work .work__container .microsoft {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.work .work__container .work__navigation {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.work .work__container .work__navigation .elipse {
+  display: flex;
+  gap: 40px;
+}
+.work .work__container .work__navigation .elipse div {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: #005FA3;
+  opacity: 0.4;
+}
+.work .work__container .work__navigation .strelka {
+  display: flex;
+}
+.work .work__container .work__navigation .strelka div {
+  width: 60px;
+  height: 60px;
+  background: #005FA3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  font-size: 30px;
+}
+
+.reviews .reviews__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.reviews .reviews__container .reviews__title {
+  margin-top: 140px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  color: #BDBDBD;
+}
+.reviews .reviews__container .reviews__thanks {
+  margin-top: 40px;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  font-family: "Merriweather", serif;
+  color: #333333;
+}
+.reviews .reviews__container .reviews__comment {
+  margin-top: 80px;
+  width: 100%;
+  padding: 45px 95px;
+  background: #EBEBEB;
+}
+.reviews .reviews__container .reviews__comment .comment {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+}
+.reviews .reviews__container .reviews__comment .author {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.reviews .reviews__container .reviews__comment .author .avatar__name {
+  display: flex;
+  flex-direction: column;
+}
+.reviews .reviews__container .reviews__navigation {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reviews .reviews__container .reviews__navigation .elipse {
+  display: flex;
+  gap: 40px;
+}
+.reviews .reviews__container .reviews__navigation .elipse div {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: #005FA3;
+  opacity: 0.4;
+}
+.reviews .reviews__container .reviews__navigation .strelka {
+  display: flex;
+}
+.reviews .reviews__container .reviews__navigation .strelka div {
+  width: 60px;
+  height: 60px;
+  background: #005FA3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+.connect {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../src/img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.connect .connect__container {
+  height: 60vh;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.connect .connect__container .contact__block .contact__title {
+  margin-top: 120px;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  color: #FFFFFF;
+  font-family: "Merriweather", serif;
+}
+.connect .connect__container .contact__block .contact__des {
+  margin-top: 60px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  width: 445px;
+}
+.connect .connect__container .contact__block .contact__icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.connect .connect__container .contact__block .contact__icons .phone {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.connect .connect__container .contact__block .contact__icons .message {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.connect .connect__container .input__block {
+  margin-top: 120px;
+}
+.connect .connect__container .input__block .name__surname {
+  display: flex;
+  gap: 30px;
+}
+.connect .connect__container .input__block .name__surname .name {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+.connect .connect__container .input__block .name__surname .name label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding: 5px 0;
+}
+.connect .connect__container .input__block .name__surname .name input {
+  width: 255px;
+  color: #FFFFFF;
+  padding: 5px;
+  border: 1px solid gray;
+  border-width: 0 0 2px 0;
+  outline: none;
+  background: transparent;
+}
+.connect .connect__container .input__block .name__surname .surname {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+.connect .connect__container .input__block .name__surname .surname label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding: 5px 0;
+}
+.connect .connect__container .input__block .name__surname .surname input {
+  width: 255px;
+  color: #FFFFFF;
+  padding: 5px 0;
+  border: 1px solid gray;
+  border-width: 0 0 2px 0;
+  outline: none;
+  background: transparent;
+}
+.connect .connect__container .input__block .message {
+  margin-top: 35px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+.connect .connect__container .input__block .message label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.connect .connect__container .input__block .message input {
+  width: 540px;
+  height: 104px;
+  color: #FFFFFF;
+  position: relative;
+  top: -30px;
+  border: 1px solid gray;
+  border-width: 0 0 2px 0;
+  outline: none;
+  background: transparent;
+}
+.connect .connect__container .input__block .button {
+  margin-top: 30px;
+  width: 270px;
+  height: 60px;
+  background: #005FA3;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  display: flex;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+}
+
+
+footer .footer__container {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer__container div {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: gray;
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .header__container .bars{
+    display: none;
+  }
+
+  .navbar{
+    display: flex;
+    gap: 30px;
+  }
+
+
+  .main__page{
+    display: flex;
+    gap: 20px;
+}
+
+   .photo .flat__title{
+  height: 200px;
+  width: 100%;
+}
+
+   .photo{
+  width: 33.3%;
+}
+
+  .main__container{
+    width: 1024px;
+    margin: auto;
+}
+
+} 
+
+@media screen and ( max-width:420px ) {
+  
+ .bars{
+  display: none;
+ }
+
+  .main .main__container .main__title{
+  width: 40px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+ .main__page .main__container .main__title2 {
+  margin-top: 90px;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+
+.main__page .main__container .main__photos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 140px;
+}
+
+.about {
+  width: 450px;
+  margin: 0 auto;
+  flex-direction: column;
+  display: flex;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  padding: 0;
+}
+
+
+
+}
